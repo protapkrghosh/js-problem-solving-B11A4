@@ -1,4 +1,6 @@
 ## Problem-01 : Calculate the cash-out Charge
+<span style="color:#fb6f92">এটি একটি রঙিন টেক্সট।</span>
+
 
 ⚠️ Function Name Must be **cashOut()**
 <br>
