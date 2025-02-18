@@ -23,14 +23,14 @@ function validEmail(email) {
    if (typeof email !== "string") {
       return "Invalid";
    }
-
-   if (
+   else if (
       email.indexOf("@") == -1 ||
       !email.endsWith(".com") ||
       email.includes(" ")
    ) {
       return false;
-   } else if (
+   }
+   else if (
       firstCharacter === "." ||
       firstCharacter === "_" ||
       firstCharacter === "+" ||
@@ -42,14 +42,19 @@ function validEmail(email) {
       firstCharacter === "(" ||
       firstCharacter === ")" ||
       firstCharacter === "[" ||
-      firstCharacter === "]"
+      firstCharacter === "]" ||
+      firstCharacter === "$" ||
+      firstCharacter === "%" ||
+      firstCharacter === "^" ||
+      firstCharacter === "@"
+
    ) {
       return false;
-   } 
+   }
    else {
       return true;
    }
 }
 
-const checkEmail = validEmail("ferdous@gmail.com");
-console.log(checkEmail);
+// const checkEmail = validEmail("FirstL@live.com");
+// console.log(checkEmail);
