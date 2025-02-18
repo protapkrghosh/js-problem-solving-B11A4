@@ -1,6 +1,6 @@
 // 01 Problem
 function cashOut(money) {
-   if (money !== "number" && money < 0) {
+   if (typeof money !== "number" || money < 0 || typeof money === 'object' || isNaN(money)) {
       return "Invalid";
    }
 
