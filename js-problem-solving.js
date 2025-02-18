@@ -109,5 +109,14 @@ function isBestFriend(f1, f2) {
 const friendOne = { name: "hashem", roll: 1, bestFriend: 1 };
 const friendTwo = { name: "kashem", roll: 1, bestFriend: 1 };
 
-const checkBestFriend = isBestFriend(friendOne, friendTwo);
-console.log(checkBestFriend);
+// const checkBestFriend = isBestFriend(friendOne, friendTwo);
+// console.log(checkBestFriend);
+
+
+
+// Problem-05: Let’s Calculate Video watch Time
+function calculateWatchTime(times) {
+   
+}
+
+calculateWatchTime();
