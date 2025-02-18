@@ -1,4 +1,4 @@
-// Problem-01 : Calculate the cash-out Charge
+// Problem-01 : Calculate the cash-out Charge 
 function cashOut(money) {
    if (
       typeof money !== "number" ||
@@ -15,6 +15,10 @@ function cashOut(money) {
 
 // const result = cashOut(2000);
 // console.log(result);
+
+
+
+
 
 // Problem-02 : Detect email  valid or not
 function validEmail(email) {
@@ -58,3 +62,9 @@ function validEmail(email) {
 
 // const checkEmail = validEmail("FirstL@live.com");
 // console.log(checkEmail);
+
+
+
+
+
+// Problem-03 : Who will Win  ( 🥭Mango /🍌 Banana )
