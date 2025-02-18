@@ -114,17 +114,27 @@ const friendTwo = { name: "kashem", roll: 1, bestFriend: 1 };
 
 // Problem-05: Let’s Calculate Video watch Time
 function calculateWatchTime(times) {
+   if (!Array.isArray(times)) {
+      return 'Invalid';
+   }
+
+   for (const element of times) {
+      if (typeof element !== "number") {
+         return "Invalid";
+      }
+   }
+
    let totalSpentTimes = 0;
    for (const time of times) {
       totalSpentTimes += time;
    }
 
-   const hours = Math.floor(totalSpentTimes / 3600);
-   const minutes = Math.floor((totalSpentTimes % 3600) / 60);
-   const seconds = totalSpentTimes % 60;
-   
-   return { hours: hours, minutes: minutes, seconds: seconds };
+   const hour = Math.floor(totalSpentTimes / 3600);
+   const minute = Math.floor((totalSpentTimes % 3600) / 60);
+   const second = totalSpentTimes % 60;
+
+   return { hour: hour, minute: minute, second: second };
 }
 
-const totalWatchTime = calculateWatchTime([1000, 2000, 725]);
-console.log(totalWatchTime);
+// const totalWatchTime = calculateWatchTime([100, 99, 119, 300]);
+// console.log(totalWatchTime);
