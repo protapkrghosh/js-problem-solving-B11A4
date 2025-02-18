@@ -18,11 +18,12 @@ function cashOut(money) {
 
 // Problem-02 : Detect email  valid or not
 function validEmail(email) {
-   let firstCharacter = email[0];
-
    if (typeof email !== "string") {
       return "Invalid";
-   } else if (
+   }
+   
+   let firstCharacter = email[0];
+   if (
       email.indexOf("@") == -1 ||
       !email.endsWith(".com") ||
       email.includes(" ")
@@ -39,6 +40,8 @@ function validEmail(email) {
       firstCharacter === "#" ||
       firstCharacter === "(" ||
       firstCharacter === ")" ||
+      firstCharacter === "{" ||
+      firstCharacter === "}" ||
       firstCharacter === "[" ||
       firstCharacter === "]" ||
       firstCharacter === "$" ||
@@ -52,7 +55,8 @@ function validEmail(email) {
    }
 }
 
-// const checkEmail = validEmail("FirstL@live.com");
+
+// const checkEmail = validEmail(["FirstL@live.com"]);
 // console.log(checkEmail);
 
 // Problem-03 : Who will Win  ( 🥭Mango /🍌 Banana )
