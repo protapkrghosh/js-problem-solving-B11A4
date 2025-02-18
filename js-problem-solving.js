@@ -81,11 +81,33 @@ function electionResult(votes) {
    }
 }
 
-const winParty = electionResult([
-   "mango",
-   "banana",
-   "mango",
-   "banana",
-   "mango",
-]);
-console.log(winParty);
+// const winParty = electionResult([
+//    "mango",
+//    "banana",
+//    "mango",
+//    "banana",
+//    "mango",
+// ]);
+// console.log(winParty);
+
+// Problem-04: Detect The Perfect Best Friend
+function isBestFriend(f1, f2) {
+   if (
+      typeof f1 !== "object" ||
+      typeof f2 !== "object" ||
+      Array.isArray(f1) ||
+      Array.isArray(f2)
+   ) {
+      return "Invalid";
+   } else if (f1.roll === f2.bestFriend && f1.bestFriend === f2.roll) {
+      return true;
+   } else {
+      return false;
+   }
+}
+
+const friendOne = { name: "hashem", roll: 1, bestFriend: 1 };
+const friendTwo = { name: "kashem", roll: 1, bestFriend: 1 };
+
+const checkBestFriend = isBestFriend(friendOne, friendTwo);
+console.log(checkBestFriend);
