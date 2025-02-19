@@ -13,8 +13,11 @@ function cashOut(money) {
    return charge;
 }
 
-// const result = cashOut(2000);
-// console.log(result);
+const result = cashOut(2000);
+console.log(result);
+
+
+
 
 // Problem-02 : Detect email  valid or not
 function validEmail(email) {
@@ -22,7 +25,6 @@ function validEmail(email) {
       return "Invalid";
    }
 
-   let firstCharacter = email[0];
    if (
       email.indexOf("@") == -1 ||
       !email.endsWith(".com") ||
@@ -30,24 +32,24 @@ function validEmail(email) {
    ) {
       return false;
    } else if (
-      firstCharacter === "." ||
-      firstCharacter === "_" ||
-      firstCharacter === "+" ||
-      firstCharacter === "*" ||
-      firstCharacter === "/" ||
-      firstCharacter === "!" ||
-      firstCharacter === "-" ||
-      firstCharacter === "#" ||
-      firstCharacter === "(" ||
-      firstCharacter === ")" ||
-      firstCharacter === "{" ||
-      firstCharacter === "}" ||
-      firstCharacter === "[" ||
-      firstCharacter === "]" ||
-      firstCharacter === "$" ||
-      firstCharacter === "%" ||
-      firstCharacter === "^" ||
-      firstCharacter === "@"
+      email[0] === "." ||
+      email[0] === "_" ||
+      email[0] === "+" ||
+      email[0] === "*" ||
+      email[0] === "/" ||
+      email[0] === "!" ||
+      email[0] === "-" ||
+      email[0] === "#" ||
+      email[0] === "(" ||
+      email[0] === ")" ||
+      email[0] === "{" ||
+      email[0] === "}" ||
+      email[0] === "[" ||
+      email[0] === "]" ||
+      email[0] === "$" ||
+      email[0] === "%" ||
+      email[0] === "^" ||
+      email[0] === "@"
    ) {
       return false;
    } else {
@@ -55,9 +57,12 @@ function validEmail(email) {
    }
 }
 
+const checkEmail = validEmail("he ro@alom.com");
+console.log(checkEmail);
 
-// const checkEmail = validEmail("he ro@alom.com");
-// console.log(checkEmail);
+
+
+
 
 // Problem-03 : Who will Win  ( 🥭Mango /🍌 Banana )
 function electionResult(votes) {
@@ -85,8 +90,12 @@ function electionResult(votes) {
    }
 }
 
-// const winParty = electionResult(["mango", "BananA", "na vote", "na vote"]);
-// console.log(winParty);
+const winParty = electionResult(["mango", "BananA", "na vote", "na vote"]);
+console.log(winParty);
+
+
+
+
 
 // Problem-04: Detect The Perfect Best Friend
 function isBestFriend(f1, f2) {
@@ -107,8 +116,12 @@ function isBestFriend(f1, f2) {
 const friendOne = { name: "hashem", roll: 1, bestFriend: 1 };
 const friendTwo = { name: "kashem", roll: 1, bestFriend: 1 };
 
-// const checkBestFriend = isBestFriend(friendOne, friendTwo);
-// console.log(checkBestFriend);
+const checkBestFriend = isBestFriend(friendOne, friendTwo);
+console.log(checkBestFriend);
+
+
+
+
 
 // Problem-05: Let’s Calculate Video watch Time
 function calculateWatchTime(times) {
@@ -134,7 +147,7 @@ function calculateWatchTime(times) {
    return { hour: hour, minute: minute, second: second };
 }
 
-// const totalWatchTime = calculateWatchTime([100, 3800, 45]);
-// console.log(totalWatchTime);
+const totalWatchTime = calculateWatchTime([100, 3800, 45]);
+console.log(totalWatchTime);
 
 
