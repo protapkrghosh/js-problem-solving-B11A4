@@ -21,7 +21,7 @@ function validEmail(email) {
    if (typeof email !== "string") {
       return "Invalid";
    }
-   
+
    let firstCharacter = email[0];
    if (
       email.indexOf("@") == -1 ||
@@ -56,7 +56,7 @@ function validEmail(email) {
 }
 
 
-// const checkEmail = validEmail(["FirstL@live.com"]);
+// const checkEmail = validEmail("he ro@alom.com");
 // console.log(checkEmail);
 
 // Problem-03 : Who will Win  ( 🥭Mango /🍌 Banana )
@@ -85,13 +85,7 @@ function electionResult(votes) {
    }
 }
 
-// const winParty = electionResult([
-//    "mango",
-//    "banana",
-//    "mango",
-//    "banana",
-//    "mango",
-// ]);
+// const winParty = electionResult(["mango", "BananA", "na vote", "na vote"]);
 // console.log(winParty);
 
 // Problem-04: Detect The Perfect Best Friend
@@ -119,7 +113,7 @@ const friendTwo = { name: "kashem", roll: 1, bestFriend: 1 };
 // Problem-05: Let’s Calculate Video watch Time
 function calculateWatchTime(times) {
    if (!Array.isArray(times)) {
-      return 'Invalid';
+      return "Invalid";
    }
 
    for (const element of times) {
@@ -140,5 +134,7 @@ function calculateWatchTime(times) {
    return { hour: hour, minute: minute, second: second };
 }
 
-// const totalWatchTime = calculateWatchTime([100, 99, 119, 300]);
+// const totalWatchTime = calculateWatchTime([100, 3800, 45]);
 // console.log(totalWatchTime);
+
+
